@@ -33,7 +33,7 @@ public:
     int Rear() {
         if(isEmpty()) return -1;
         if(rear == 0){
-            return q[(rear - 1 + capacity) % capacity];
+            return q[capacity - 1];
         }
         return q[rear - 1];
     }
